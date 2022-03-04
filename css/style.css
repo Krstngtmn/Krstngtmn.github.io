@@ -261,7 +261,14 @@ header .social a:last-child {
 
 .coding {
   display: flex;
+  flex-flow: row wrap;
   color: white;
+}
+
+.coding .page-title {
+  width: 100%;
+  margin-bottom: 60px;
+  text-align: center;
 }
 
 .coding h1 {
@@ -274,6 +281,58 @@ header .social a:last-child {
   background-clip: text;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+.coding .vertical-nav {
+  width: 100%;
+}
+
+.doggos {
+  position: relative;
+}
+
+.doggos::before {
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.doggos img {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  object-fit: contain;
+}
+
+#select-breed {
+  border: px solid #dddcdd;
+  border-radius: 15px;
+  background-color: white;
+  padding: 8px 80px 8px;
+  writing-mode: horizontal-tb;
+}
+
+ul li {
+  text-decoration: none;
+}
+
+#loader {
+  display: block;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  font-size: 50px;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  animation: spin 1s infinite linear;
+}
+
+@keyframes spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
 }
 
 

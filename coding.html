@@ -12,7 +12,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;600&family=Poppins:wght@200&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css"/>
-    <script src= "scripts/app.js"></script>
   </head>
   <body class="coding-page">
     <header>
@@ -42,8 +41,22 @@
 
     <main>
       <section class="coding">
-        <div>
-          <h1><span class="text-gradient">Some of my coding projects are available here</span></h1>
+        <h1 class="page-title"><span class="text-gradient">Some of my coding projects are available here</span></h1>
+
+        <div class="contentleft">
+          <div class="vertical-nav">
+            <h1>Find-A-Dogomat</h1>
+            <p>Your prime source of connecting the dog breed's name to the face!</p>
+  
+            <select name="breed" id="select-breed">
+              <option value="" selected disabled hidden>Choose a breed</option>
+            </select>
+          </div>
+  
+          <div class="doggos">
+            <span id="loader" class="loading-dog">🐕</span>
+            <img id="dog-img" src="" alt="">
+          </div>
         </div>
       </section>
     </main>
@@ -51,5 +64,8 @@
     <footer>
       <p> © 2022 Kristina Gutmann. All rights reserved</p>
     </footer>
+
+    <script src= "scripts/app.js"></script>
+
   </body>
 </html>
